@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>  Game </title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="dogsindex.css">
+    <style type=text/css>
+    body{
+        border-style: solid;
+        border-width: 5px;
+        padding: 10px;
+        text-align: center;
+        color: firebrick;
+        background-color: ivory;
+        border-color: forestgreen;
+        color:purple}
+    </style>
+
+
+    <h1>This is an easy game</h1>
+    <h2>Drag them and put them in their houses!</h2>
+    <h2 style="
+    font-size: large;
+    border-style: dottedd;
+    border-width: 1px;
+    background-color: lightpink;
+    text-align: center;
+    font-family: serif;
+    width: 20%;
+    padding: 20px;
+    float: initial;
+">Put the puppies in their houses</h2>
+
+
+<div class="dogs">
+    
+    <img id="img1" src='http://img.gos68.com/uploads/20190430/11/1556594171-JfFrXkQEvm.jpg'>
+    <img id="img2" src="http://img.ewebweb.com/uploads/20190622/23/1561216240-eSRFuHIsEL.jpg"> 
+</div>
+<div class="houses">
+    <img id="img3" src='https://www.lucydraw.com/data/upload/d/file/ertonghua/jianbihua/fengjing/jianzhu/2015-09-06/1441510080892737.jpg'>
+    <img id="img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpoHhg2PO6ebM8KUsHxDjpsneEF743DrhpK9i1OI0ZfTqZhzX-"> 
+    
+</div>
+
+
+</head>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("img").hide();
+    });
+
+    $("#show").click(function(){
+        $("img").show();
+    });
+
+    $("#Find-out").click(function(){
+        alert("The white dog lives in the village! The big dog lives in a luxury house!");
+    });
+});
+$(function(){
+    $("#img1").draggable();
+}); 
+$(function(){
+    $("#img2").draggable();
+}); 
+$(function(){
+    $("#img3").droppable();
+}); 
+$(function(){
+    $("#img4").droppable();
+}); 
+
+
+
+</script>
+    
+</div>
+
+<body>
+    <button type="button" class="btn btn-info" id='hide'>Hide</button>
+    <button type="button" class="btn btn-warning" id='show'>Show</button>
+    <button type="button" class="btn btn-success" id='Find-out'>Find out where they live!</button>
+    
+</body>
+   
+</html>

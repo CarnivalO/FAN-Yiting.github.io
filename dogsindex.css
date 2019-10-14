@@ -1,0 +1,12 @@
+.dogs{
+    float: left; width:150px;
+    height:150px;
+}
+.houses{
+    float: right; width:250px;
+    height:250px;
+}
+img{
+    width:150px;
+    height:150px;
+}
